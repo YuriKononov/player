@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body id = "body_wrapper">
+        <div id="div_wrapper">
+            <div id = "video_area">
+                <div id="sys_functions">
+                    <button id="open_file_btn" class="ctrls"></button>
+                    <button id="change_style_btn" class="ctrls"></button>
+                    <button id="quit_btn" class="ctrls"></button>
+                    <button id = "fullscrn" class="ctrls"></button>
+                    <span id ="name_area" hidden="true"></span>
+                </div>
+                <div id="video_wrapper">
+                    <video id = "video">
+                        <source src = "#" type="video/mp4">
+                    </video>
+                </div>
+                <div id = "control_panel">
+                    <button id = "play_stop" class="ctrls play"></button>
+                    <input type="range" class="ctrls slider" id = "progress_bar" value="0">
+                    <input type="range" class="ctrls slider" id = "volume_bar" value="0.1">
+                    <select id = "video_speed" class="ctrls" >
+                        <option value="2">2</option>
+                        <option value="1.5">1.5</option>
+                        <option selected value="1">1</option>
+                        <option value="0.5">0.5</option>
+                        <option value="0.25">0.25</option>
+                    </select>
+                </div>
+            </div>
+                <script src="renderer/render.js"></script>
+                <script src="includes/player.js"></script>
+        </div>
+    </body>
+</html>
